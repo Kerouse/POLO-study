@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Official Ultralytics clone stays local; install with: pip install -e ultralytics
+ultralytics/
+
+# Virtual environments and secrets
+.venv/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Weights and exported models (auto-downloaded on first run)
+*.pt
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+weights/
+
+# Datasets and training outputs
+datasets/
+runs/
+
+# Demo media: keep preview stills, drop raw inputs and generated videos
+official_demo/inputs/
+official_demo/results/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Allow small preview images for the four-task demo
+!official_demo/previews/
+!official_demo/previews/*.jpg
